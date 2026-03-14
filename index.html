@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    
+    <div class="hero-header" id="home">
+        <div class="wrapper">
+            <header>
+            <div class="logo">
+                <i class="fa-solid fa-l"></i>
+                <div class="logo-text">Liliyom</div>
+            
+    </div>
+   
+<nav>
+    <div class="togglebtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="navlinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+</nav>
+ </header>
+ <div class="container">
+    <div class="hero-pic">
+        <img src="lili.png" alt="lily">
+    </div>
+    <div class="hero-text">
+        <h5>Hi, I'm <span class="input">Frontend developer</span></h5>
+        <h1>Liliyom</h1>
+        <p>I am a Machine Learning Engineer and Frontend Developer who builds intelligent systems and modern, responsive web applications. I work with tools like TensorFlow and PyTorch for developing ML models, and use HTML, CSS, JavaScript, and React.js to create clean, user-friendly interfaces. I focus on delivering smart, efficient, and impactful digital solutions.
+</p>
+   <div class="btn-group">
+    <a href="resume/developer_resume.pdf" class="btn active" download>Download Resume</a>
+    <a href="#contact" class="btn">Contact</a>
+   </div>
+   <div class="social">
+    <a href="https://github.com/liliyom" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/liliyom-30ba451aa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+   </div>
+    </div>
+    
+ </div>
+</div>
+        </div>
+
+    <main>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section portfolio">
+            <div class="section-inner">
+                <h1 class="section-title">My Projects</h1>
+                <p class="section-subtitle">
+                    Here are some of my Machine Learning and Web Development projects.
+                </p>
+
+                <div class="portfolio-container">
+
+                    <div class="portfolio-card">
+                        <h3>Biometric ATM Authentication System</h3>
+                        <p>
+                            Face & fingerprint recognition system using YOLO, FaceNet, 
+                            TensorFlow, and secure cryptographic techniques.
+                        </p>
+                        <div class="tech-stack">
+                            <span>TensorFlow</span>
+                            <span>YOLO</span>
+                            <span>OpenSSL</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn-primary">Live Demo</a>
+                            <a href="https://github.com/liliyom/Biometric-ATM-Authentication-System" target="_blank" class="btn-outline">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3>Medical chatbot model</h3>
+                        <p>
+                            AI-powered chatbot for providing medical information and assistance, built with modern NLP techniques.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Bert</span>
+                            <span>NLP</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn-primary">Live Demo</a>
+                            <a href="https://github.com/liliyom/Final-project-of-AI-at-NUST-campus-Gilgit/tree/main" target="_blank" class="btn-outline">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3>Curiopay website</h3>
+                        <p>
+                            Responsive fintech website to track your finances, built with modern web technologies.</p>
+                        <div class="tech-stack">
+                            <span>Next.js</span>
+                            <span>Context API</span>
+                            <span> Tailwind CSS</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn-primary">Live Demo</a>
+                            <a href="https://github.com/liliyom/curiopay-app-" target="_blank" class="btn-outline">GitHub</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section resume-section">
+            <div class="section-inner">
+                <h1 class="section-title">My Resume</h1>
+                <div class="pdf-container">
+                    <iframe src="resume/developer_resume.pdf" width="100%" height="600px"></iframe>
+                </div>
+                <div class="download-cv">
+                    <a href="resume/developer_resume.pdf" class="btn-primary" download>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section blog-section">
+            <div class="section-inner">
+                <div class="blog-intro">
+                    <h1>Welcome to My Blog</h1>
+                    <p>Sharing insights, updates, and tutorials on web development and more.</p>
+                </div>
+
+                <div class="blog-posts">
+                    <article class="blog-post" id="post-react-hooks">
+                        <h2>Understanding React Hooks</h2>
+                        <p class="date">March 5, 2026</p>
+                        <p>React Hooks are functions that let you use state and other React features without writing a class...</p>
+                        <p class="post-more">
+                            With hooks like <strong>useState</strong> and <strong>useEffect</strong>, you can manage local state,
+                            handle side effects such as API calls, and keep components small and reusable.
+                            Hooks encourage you to break your UI into focused pieces of logic instead of large, complex components.
+                        </p>
+                        <p class="post-more">
+                            In real projects, I use hooks to separate data fetching, animations, and user interaction logic,
+                            which makes the codebase easier to maintain and scale as new features are added.
+                        </p>
+                        <a href="https://react.dev/reference/react/hooks" target="_blank" class="read-more">Read More</a>
+                    </article>
+
+                    <article class="blog-post" id="post-clean-css">
+                        <h2>Machine Learning with Python</h2>
+                        <p class="date">october 1, 2025</p>
+                        <p>As technology continues to grow, machine learning has become an essential skill for anyone interested in artificial intelligence and data science.</p>
+                        <p class="post-more">My focus in Machine Learning is to understand how intelligent systems can learn from data and make accurate predictions. I aim to develop strong skills in data preprocessing, model training, and evaluation using modern frameworks like TensorFlow and PyTorch.
+                            </p>
+                        <p class="post-more">
+                            With Machine Learning, I can build intelligent systems that learn from data and make predictions or decisions automatically. I can develop applications such as image and face recognition systems, recommendation systems, fraud detection, and predictive analytics. Using frameworks like TensorFlow and PyTorch.
+                            </p>
+                        <a href="https://www.nrigroupindia.com/e-book/Introduction%20to%20Machine%20Learning%20with%20Python%20(%20PDFDrive.com%20)-min.pdf" target="_blank" class="read-more">Read More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-inner">
+                <h1 class="section-title">Contact Me</h1>
+                <p class="section-subtitle">
+                    Let’s work together or discuss your next project.
+                </p>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Email: liliyoumkarim@gmail.com</p>
+                        <p>Phone: +92 3498117048</p>
+                        <p>Location: Pakistan</p>
+                        <p>Available for freelance & full-time opportunities</p>
+                    </div>
+
+                    <div class="contact-form">
+                        <form action="https://formsubmit.co/liliyoumkarim@gmail.com" method="POST"> 
+                            <input type="text" placeholder="Your Name"name="name" required>
+                            <input type="email" placeholder="Your Email" name="email" required>
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                            <input type="hidden" name="_captcha" value="false">
+                            
+                            <button type="submit" class="btn-primary">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+        <script>
+            <!-- creating button show click hide -->
+            var togglebtn = document.querySelector(".togglebtn");
+            var nav = document.querySelector(".navlinks");
+            var links = document.querySelector(".navlinks li")
+
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+
+            var typed = new Typed(".input",{
+                strings: ["Frontend Developer", "Machine learning eng", "Web designer"],
+                typeSpeed: 70,
+                backSpeed: 55,
+                loop: true
+            })
+        </script>
+</body>
+</html>
