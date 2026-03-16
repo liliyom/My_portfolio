@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>liliyom</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
@@ -196,23 +196,23 @@
                     </div>
 
                     <div class="contact-form">
-                        <form action="https://formsubmit.co/liliyoumkarim@gmail.com" method="POST"> 
-                            <input type="text" placeholder="Your Name"name="name" required>
-                            <input type="email" placeholder="Your Email" name="email" required>
-                            <textarea rows="5" placeholder="Your Message" required></textarea>
-                            <input type="hidden" name="_captcha" value="false">
-                            
-                            <button type="submit" class="btn-primary">
-                                Send Message
-                            </button>
-                        </form>
+                        <form>
+<input id="name" name="name" placeholder="Your Name" required>
+<input id="email" name="email" type="email" placeholder="Your Email" required>
+<textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+<button type="submit" class="btn-primary">
+Send Message
+</button>
+</form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+
         <script>
             <!-- creating button show click hide -->
             var togglebtn = document.querySelector(".togglebtn");
@@ -230,6 +230,39 @@
                 backSpeed: 55,
                 loop: true
             })
+     document.addEventListener("DOMContentLoaded", function () {
+
+(function(){
+emailjs.init("BJPN4rjkveFmr48Nh");
+})();
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(e){
+e.preventDefault();
+
+emailjs.send("service_gkz5xtg","template_7f9ij6r",{
+name: document.getElementById("name").value,
+email: document.getElementById("email").value,
+message: document.getElementById("message").value
+})
+.then(function(){
+alert("Message sent successfully!");
+form.reset(); // ✅ clears the inputs
+}, function(error){
+alert("Failed to send message");
+});
+
+});
+
+});  
+
+
+
+
+
+
+
         </script>
 </body>
 </html>
